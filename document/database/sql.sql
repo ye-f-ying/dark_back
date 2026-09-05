@@ -38,7 +38,6 @@ CREATE TABLE `admin_role` (
   `update_time` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
   `delete_time` DATETIME DEFAULT NULL COMMENT '删除时间（软删除）',
   PRIMARY KEY (`id`),
-  UNIQUE KEY `uk_role_code` (`role_code`),
   KEY `idx_status` (`status`),
   KEY `idx_parent_id` (`parent_id`),
   KEY `idx_delete_time` (`delete_time`)
